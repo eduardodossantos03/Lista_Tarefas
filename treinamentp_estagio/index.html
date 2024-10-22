@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <!-- Vinculando o arquivo CSS externo para a estilização da página -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Container semântico para agrupar o conteúdo principal da aplicação -->
+    <main class="container">
+        <h1>Lista de Tarefas</h1>
+
+        <!-- Formulário semântico para a criação de novas tarefas -->
+        <form id="todo-form">
+            <!-- Input semântico para inserir o título da tarefa -->
+            <input type="text" id="task-title" placeholder="Título da tarefa" required>
+            <!-- Área de texto para a descrição opcional da tarefa -->
+            <textarea id="task-desc" placeholder="Descrição da tarefa"></textarea>
+            <!-- Botão de envio semântico para adicionar a nova tarefa -->
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+
+        <!-- Seção semântica para exibir as tarefas pendentes -->
+        <section>
+            <h2>Tarefas Pendentes</h2>
+            <!-- Lista não ordenada para exibir as tarefas pendentes -->
+            <ul id="pending-tasks"></ul>
+        </section>
+
+        <!-- Seção semântica para exibir as tarefas concluídas -->
+        <section>
+            <h2>Tarefas Concluídas</h2>
+            <!-- Lista não ordenada para exibir as tarefas concluídas -->
+            <ul id="completed-tasks"></ul>
+        </section>
+    </main>
+
+    <!-- Inclusão do arquivo JavaScript para a lógica da aplicação -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
